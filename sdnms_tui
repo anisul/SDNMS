@@ -1,0 +1,12 @@
+#!/bin/sh
+
+SDNMS=sdnms
+HOST=localhost
+PORT=1234
+
+FILE1=/tmp/sdnms1-$$
+FILE2=/tmp/sdnms2-$$
+ERROR=/tmp/sdnms-err-$$
+
+
+# TODO: add TUI functionality
