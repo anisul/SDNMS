@@ -15,7 +15,7 @@ download:
 upload:
 	git add .
 	git commit -a
-	git push origin 
+	git push origin
 
 tags:
 	git push origin --tags

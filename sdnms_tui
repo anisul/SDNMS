@@ -1,12 +1,21 @@
-#!/bin/sh
+#!/bin/bash
 
-SDNMS=sdnms
-HOST=localhost
-PORT=1234
-
-FILE1=/tmp/sdnms1-$$
-FILE2=/tmp/sdnms2-$$
-ERROR=/tmp/sdnms-err-$$
-
-
-# TODO: add TUI functionality
+while true; 
+do
+	read -p "Enter channel number:" input
+	case ${input} in
+		*[!1-2]* ) 
+			printf " Please enter a number: \n 1- Un-encrypted \n 2- Encrypted \n"
+			;;
+		*[1-2]* ) 
+			echo $input | sdnms 1> /tmp/log
+			val=`cat /tmp/hello`
+			if [ $val -gt 199 -a $val -lt 300 ]
+			then
+				printf "Changed to channel : $input \n"
+			else
+				printf "Couldn\'t connect to server.\n"
+			fi
+			;;
+	esac
+done
