@@ -1,5 +1,5 @@
 # SDNMS
-SDN-enabled management system for block-chain transaction channels with a quantum cryptography encoding
+SDNMS is a utility that can send the specified REST API requests for Ryu OpenFlow specialized application for switching between unencrypted transaction channels and encrypted by Quantum Key Distribution (QKD)
 
 ## TO-DO:
 * GUI
