@@ -1,21 +1,20 @@
 #!/bin/bash
+TMP_FILE=/tmp/file-$$
 
 while true; 
 do
 	read -p "Enter channel number:" input
 	case ${input} in
-		*[!1-2]* ) 
-			printf " Please enter a number: \n 1- Un-encrypted \n 2- Encrypted \n"
+		[1-2] ) 
+			echo $input | sdnms > $TMP_FILE
+			val=$(cat $TMP_FILE)
+			printf "Channel changed to: $input \n"
 			;;
-		*[1-2]* ) 
-			echo $input | sdnms 1> /tmp/log
-			val=`cat /tmp/hello`
-			if [ $val -gt 199 -a $val -lt 300 ]
-			then
-				printf "Changed to channel : $input \n"
-			else
-				printf "Couldn\'t connect to server.\n"
-			fi
-			;;
+		    * )
+			printf "\n" 
+			printf " ------------------------------------------------------- \n"
+			printf " Please enter a number: [1]Un-encrypted [2]Encrypted \n"
+			printf " ------------------------------------------------------- \n"
+			;;	
 	esac
 done
