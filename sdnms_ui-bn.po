@@ -16,4 +16,9 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-# TODO: Add translation keys and values
+msgid "Select a channel (1 OR 2):"
+msgstr "চ্যানেল বাছাই ক্রুনঃ (১ অথবা ২)"
+
+msgid "Channel changed. Continue?"
+msgstr "চ্যানেল পরিবর্তন হয়েছে। পুনরায় পরিবর্তন করতে চান?"
+

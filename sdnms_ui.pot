@@ -16,18 +16,10 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: calc_ui:24
-msgid "Enter expression:"
+
+msgid "Select a channel (1 OR 2):"
 msgstr ""
 
-#: calc_ui:28
-msgid "Result:"
+msgid "Channel changed. Continue?"
 msgstr ""
 
-#: calc_ui:28 calc_ui:31
-msgid "Continue?"
-msgstr ""
-
-#: calc_ui:31
-msgid "Error:"
-msgstr ""
