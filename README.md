@@ -35,7 +35,7 @@ To access Graphical User Interface (GUI):
 
 ## Authors
 
-* **MD ANISUL ISLAM** - [PurpleBooth](https://github.com/anisul)
+* **MD ANISUL ISLAM** - [anis](https://github.com/anisul)
 
 
 ## Acknowledgments
