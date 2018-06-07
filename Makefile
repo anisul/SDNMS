@@ -5,7 +5,7 @@ install: sdnms_ui.mo
 	install sdnms.xinetd /etc/xinetd.d/sdnms
 	ln -sf /usr/local/bin/sdnms_tui /usr/local/bin/sdnms_net
 	ln -sf /usr/local/bin/sdnms_tui /usr/local/bin/sdnms_gui
-        install sdnms_ui.mo /usr/share/locale/bn/LC_MESSAGES/sdnms_ui.mo
+	install sdnms_ui.mo /usr/share/locale/bn/LC_MESSAGES/sdnms_ui.mo
 
 sdnms_gui.pot: sdnms_gui
 	xgettext -o sdnms_ui.pot -L Shell sdnms_gui
